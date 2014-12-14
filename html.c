@@ -846,12 +846,10 @@ void print_html_node(GString *out, node *n, scratch_pad *scratch) {
 		case GLOSSARYLABEL:
 			break;
 		case SUPERSCRIPT:
-			// g_string_append_printf(out, "<sup>%s</sup>",n->str);
-			g_string_append_printf(out, "%s",n->str);
+			g_string_append_printf(out, "<sup>%s</sup>",n->str);
 			break;
 		case SUBSCRIPT:
-			// g_string_append_printf(out, "<sub>%s</sub>",n->str);
-			g_string_append_printf(out, "%s",n->str);
+			g_string_append_printf(out, "<sub>%s</sub>",n->str);
 			break;
 		case ABBREVIATION:
 		case KEY_COUNTER:
